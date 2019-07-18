@@ -1,0 +1,33 @@
+
+import javax.swing.*; 
+  
+// inheriting JFrame 
+public class Swing_1 extends JFrame
+{ 
+    JFrame frame; 
+    Swing_1() 
+    { 
+        frame = new JFrame("my internal frame");
+        setTitle("this is also a title"); 
+        frame.setSize(100,100);
+        // create button 
+        JButton button = new JButton("click"); 
+  
+        button.setBounds(165, 135, 115, 55); 
+          
+      
+        frame.add(button); 
+  
+        add(frame);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+  
+        setSize(400, 500); 
+       // setLayout(null); 
+        setVisible(true); 
+    } 
+      
+    public static void main(String[] args) 
+    { 
+        new Swing_1(); 
+    } 
+} 
